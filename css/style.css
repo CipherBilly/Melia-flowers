@@ -98,7 +98,7 @@ html {
     .log-in.form form {
         justify-content: center;
         align-items: center;
-        min-width: 217px;
+        min-width: 117px;
     }
 }
 .log-in.form form h3 {
