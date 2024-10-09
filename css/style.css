@@ -64,6 +64,11 @@ html {
    width: fit-content;
    flex:1;
 }
+@media (max-width: 767px){
+    .log-in.content .intro {
+        display: none;
+     }
+}
 .log-in.content h1 {
     margin: 0 ;
     font-size: 96px;
@@ -88,6 +93,13 @@ html {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+    .log-in.form form {
+        justify-content: center;
+        align-items: center;
+        min-width: 317px;
+    }
 }
 .log-in.form form h3 {
     font-weight: bold;
@@ -143,11 +155,21 @@ html {
     color: white;
     background-color: var(--main-color);
 }
+@media (max-width: 767px) {
+    .log-in.form form a {
+        min-width: 230px;
+    }
+}
 .log-in.form form span {
     color: #0F30E0;
     margin-top: 10px;
     margin-left: auto;
     cursor: pointer;
+}
+@media (max-width: 767px){
+    .log-in.content .flowers {
+        display: none;
+    }
 }
 .log-in.content .flowers-holder img {
     position: absolute;
@@ -911,6 +933,12 @@ html {
 }
 .events .left-arrow {
     left: -10px;
+}
+@media (max-width: 767px) {
+    .events .right-arrow:hover,
+    .events .left-arrow:hover {
+        display: none;
+    }
 }
 .events .container .content .box {
     border-radius: 4px;
