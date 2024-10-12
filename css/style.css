@@ -79,14 +79,17 @@ html {
     font-size: 32px;
     font-weight: 300;
 }
+@media (max-width: 767px) {
+    .log-in.form {
+        max-width: 217px;
+        margin: 50% auto ;
+    }
+}
 .log-in.form form {
     position: relative;
-    top: 200px;
-    left: 30px;
     display: flex;
     flex-direction: column;
     background-color: white;
-    min-width: 417px;
     padding: 20px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -94,11 +97,11 @@ html {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
     .log-in.form form {
-        justify-content: center;
-        align-items: center;
-        min-width: 117px;
+        top: 200px;
+        left: 30px;
+        min-width: 417px;
     }
 }
 .log-in.form form h3 {
@@ -219,7 +222,6 @@ html {
     -ms-transform: translate(-95%, -90%);
     -o-transform: translate(-95%, -90%);
 }
-
 /* End log-in */
 /* Start Header */
 .header  {
